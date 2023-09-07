@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, rgb(171, 171, 244), rgb(43, 43, 144));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .heading p {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .clock div {
+    background-color: #ffffff;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #150c41;
+    border-radius: 0.4em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+    margin: 0 0.5em;
+  }
+  
+  .clock span {
+    font-weight: 800;
+    font-size: 2em;
+    color: #ffffff;
+  }
+  
+  .container #date {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .clock {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .clock div {
+      width: 5em;
+      height: 5em;
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+  }
+  
+  /* Media Queries for Smaller Screens */
+  @media screen and (max-width: 480px) {
+    .heading p {
+      font-size: 2.5em;
+    }
+  
+    .clock {
+      flex-direction: column;
+    }
+  
+    .clock div {
+      width: 6em;
+      height: 6em;
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+  
+    .container #date {
+      font-size: 1.5em;
+    }
+  }
